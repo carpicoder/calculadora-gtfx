@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora GTFX 🧩</title>
+    <link rel="stylesheet" href="./css/main.css?v=1.0.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Calculadora GTFX 🧩</h1>
+
+        <section>
+            <h2>Cuánto voy a demorar en llegar a X monto:</h2>
+            <form id="cuanto-demoro">
+                <label>
+                    <p>Ingresá cuánto tenés ahora en GTFX:</p>
+                    <input enterkeyhint="next" id="cuanto-demoro-tengo" type="text" placeholder="Monto actual">
+                </label>
+                <label>
+                    <p>Ingresá a cuánto querés llegar:</p>
+                    <input enterkeyhint="go" id="cuanto-demoro-quiero-tener" type="text" placeholder="Quiero tener">
+                </label>
+                <label>
+                    <input type="submit" value="Calcular">
+                </label>
+            </form>
+            <div>
+                <p class="vas-a-llegar">Vas a llegar en: <span id="cuanto-demoro-dias">X</span> días.</p>
+                <p>Esto va a ser el: <span id="cuanto-demoro-fecha">X</span>.</p>
+                <p>Si retirás todo este día, recibirías: <span id="cuanto-demoro-retiro">X</span> USDT. <span class="small">(GTFX gana un 5% de comisión)</span></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Cuánto voy a tener en X días:</h2>
+            <form id="cuanto-en-dias">
+                <label>
+                    <p>Ingresá cuánto tenés ahora en GTFX:</p>
+                    <input enterkeyhint="next" id="cuanto-en-dias-tengo" type="text" placeholder="Monto actual">
+                </label>
+                <label>
+                    <p>Ingresá cuántos días querés operar:</p>
+                    <input enterkeyhint="go" id="cuanto-en-dias-dias-a-operar" type="text" placeholder="Días a operar">
+                </label>
+                <label>
+                    <input type="submit" value="Calcular">
+                </label>
+            </form>
+            <div>
+                <p class="vas-a-llegar">En <span id="cuanto-en-dias-dias">X</span> días vas a tener: <span id="cuanto-en-dias-usdt">X</span> USDT.</p>
+                <p>Esto va a ser el: <span id="cuanto-en-dias-fecha">X</span>.</p>
+                <p>Si retirás todo este día, recibirías: <span id="cuanto-en-dias-retiro">X</span> USDT. <span class="small">(GTFX gana un 5% de comisión)</span></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Cuánto voy a demorar en ganar X USDT diarios:</h2>
+            <form id="cuanto-para-usdt-diarios">
+                <label>
+                    <p>Ingresá cuánto tenés ahora en GTFX:</p>
+                    <input enterkeyhint="next" id="cuanto-para-usdt-diarios-tengo" type="text" placeholder="Monto actual">
+                </label>
+                <label>
+                    <p>Ingresá cuánto querés ganar diariamente:</p>
+                    <input enterkeyhint="go" id="cuanto-para-usdt-diarios-quiero" type="text" placeholder="Cuánto ganar diariamente">
+                </label>
+                <label>
+                    <input type="submit" value="Calcular">
+                </label>
+            </form>
+            <div>
+                <p class="vas-a-llegar">Vas a ganar <span id="cuanto-para-usdt-diarios-usdt">X</span> USDT diarios en: <span id="cuanto-para-usdt-diarios-dias">X</span> días.</p>
+                <p>Esto va a ser el: <span id="cuanto-para-usdt-diarios-fecha">X</span>.</p>
+            </div>
+        </section>
+
+        
+        <p class="aclaraciones">* Todos los cálculos son aproximados y pueden variar, ya que las ganancias son variables.</p>
+        <p class="aclaraciones">* En los cálculos NO se tienen en cuenta las comisiones por referidos, solamente las ganancias de operación.</p>
+        <p class="aclaraciones">* Todo se calcula teniendo en cuenta que se opera de domingos a viernes inclusive, sin falta.</p>
+        <p class="aclaraciones">* Los cálculos tienen en cuenta que los sábados no se opera, y el estimado es de días REALES (no días operables).</p>
+        <p class="aclaraciones">* Todos los gastos de dinero en inversiones son riesgosos y son responsabilidad exclusiva de cada uno. NO soy responsable de la inversión de los demás. NO soy responsable de los errores que puedan existir en esta página web. NO tengo ninguna relación con GTFX ni con Micha. Esta web está hecha con fines educativos y de ocio. NO recomiendo invertir.</p>
+    </div>
+    <div class="container footer">
+        <p>App desarrollada por <a href="https://carpicoder.com" target="_blank">Carpi Coder</a>. ❤️</p>
+        <p>Hecho con amor y a pulmón. Si querés, podés ayudar <a href="https://carpicoder.com/donaciones" target="_blank">haciendo una donación acá</a>. 🫰</p>
+        <p>Para sugerencias, leer el <a href="https://github.com/carpicoder/calculadora-gtfx" target="_blank">README del repo</a>. 🎉</p>
+        <p>Para consultas, podés escribirme por <a target="_blank" href="https://t.me/carpicoder">Telegram</a>. 📨</p>
+    </div>
+
+    <script src="./js/main.js?v=1.0.0"></script>
+</body>
+</html>
