@@ -2,7 +2,7 @@ const agregarClaseVerde = (elements) => {
     elements.forEach(element => element.classList.add("verde"));
 };
 
-const PORCENTAJE = 1.0280285714286;
+const PORCENTAJE = 1.0282857142857;
 
 // Form 1: Calcular cuánto voy a demorar en llegar a X USDT
 //! Math.log(quieroTener / tengo) / Math.log(1.01414)
